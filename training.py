@@ -41,8 +41,7 @@ model.compile(loss = 'binary_crossentropy',optimizer = 'adam', metrics = ['accur
 
 #batch size is the size of images you want to give it to neural network to tain once at a time
 #validation_split = 0.3 means that use 70% image to check whether it is dog or cat and rest 30% use it for crosscheck
-model.fit(X,y,batch_size = 16, epochs = 10
-,validation_split = 0.3)
+model.fit(X,y,batch_size = 16, epochs = 10,validation_split = 0.3)
 
 #saving 
 model.save(r'D:\Projects\Dogs vs Cats\Dogs_vs_Cats_CNN.model')
